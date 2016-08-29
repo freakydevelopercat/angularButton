@@ -1,0 +1,122 @@
+/*Added for css style*/
+.switch input {
+    display: none;
+}
+.switch i {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 20px;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    border-radius: 20px;
+    box-shadow: inset 0 0 1px rgba(0,0,0,.5);
+}
+.switch i:before {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+/*added for sizes */
+.switch.small i:before{
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);   
+}
+
+.switch.medium i{
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 20px;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    border-radius: 25px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.5); 
+}
+.switch.medium i:before{
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);   
+}
+
+
+.switch.large i{
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 20px;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    border-radius: 35px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.5); 
+}
+.switch.large i:before{
+    display: block;
+    content: '';
+    width: 80px;
+    height: 80px;
+    border-radius: 35px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);   
+}
+
+
+
+.switch :checked + i {
+    padding-right: 0;
+    padding-left: 20px;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.5), inset 0 0 30px lightblue;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px lightblue;
+}
+
+.switch.red :checked + i {
+    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px red;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px red;
+}
+
+.switch.green :checked + i {
+    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px green;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px green;
+}
+
+.switch.yellow :checked + i {
+    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px yellow;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px yellow;
+}
+/*inspinia added colors*/
+.switch.inspiniayellow :checked + i {
+/*    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #f8ac59;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #f8ac59;*/
+    box-shadow: none;
+    background-color: #f8ac59;
+}
+
+.switch.inspiniagreen :checked + i {
+/*    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #1ab399;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #1ab399;*/
+    box-shadow: none;
+    background-color: #1ab399;
+}
+
+.switch.inspiniared :checked + i {
+/*    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #ed5565;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #ed5565;*/
+    box-shadow: none;
+    background-color: #ed5565;
+}
+.switch.inspiniablue :checked + i {
+/*    box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #293846;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.5), inset 0 0 40px #293846;*/
+    box-shadow: none;
+    background-color: #293846;
+}

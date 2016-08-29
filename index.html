@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switchery | Buttons</title> 
+    <!-- angular and bootstrap main scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+    <link rel="stylesheet" href="dist/bootstrap/bootstrap.css">
+     <!-- added for switchery plugin -->
+    <script src="dist/switchery/switchery.js"></script>
+    <link rel="stylesheet" href="dist/switchery/switchery.css">
+    <!-- added for custom css switch directive -->
+    <link rel="stylesheet" href="dist/switch/switch.css">   
+    <script src="scripts/button.js"></script> 
+
+
+
+</head>
+
+<body >
+     
+    
+    <div ng-controller="someCtrl">
+
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>Inspinia inspired buttons</h3></div>
+                <div class="panel-body">
+                    <p> Needed files for functioning of switch buttons:<br>
+                        1.scripts/button.js<br>
+                        2.dist/switch/switch.css<br>
+                        3.angular script<br>
+                        Instantiate the buttonswitch directive inside of your controller. The button is infact a checkbox. The state of button is determined by checked attrbute. It can be empty string or checked.
+                    </p>
+                </div>
+                <div class="panel-body">
+                    <div buttonswitch color="inspiniayellow" size="medium" checked=""></div>
+                    <xmp><div buttonswitch color="inspiniayellow" size="medium"></div></xmp>
+                </div>
+
+                <div class="panel-body">
+                    <div buttonswitch color="inspiniared" size="medium" checked="checked"></div>
+                    <xmp><div buttonswitch color="inspiniared" size="medium"></div></xmp>
+                </div>
+
+                <div class="panel-body">
+                    <div buttonswitch color="inspiniablue" size="medium" checked="checked"></div>
+                     <xmp><div buttonswitch color="inspiniablue" size="medium"></div></xmp>
+                </div>
+
+                <div class="panel-body">
+                    <div buttonswitch color="inspiniagreen" size="medium" checked="checked"></div>
+                     <xmp><div buttonswitch color="inspiniagreen" size="medium"></div></xmp>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>Different sizes buttons</h3></div>
+                <div class="panel-body">
+                    <div buttonswitch size="small"></div>
+                    <xmp><div buttonswitch size="small"></div></xmp>
+                </div>
+
+                <div class="panel-body">
+                    <div buttonswitch></div>
+                    <xmp><div buttonswitch></div></xmp>
+                </div>
+
+                <div class="panel-body">
+                    <div buttonswitch size="medium"></div>
+                    <xmp><div buttonswitch size="medium"></div></xmp>
+                </div>
+
+                <div class="panel-body">
+                    <div buttonswitch size="large"></div>
+                    <xmp><div buttonswitch size="large"></div></xmp>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Switchery buttons</div>
+                 <p>    The switchery button is taken from site 
+                        <a href="http://abpetkov.github.io/switchery/">Switchery</a> but it is modified so you can use it by inserting two documents (inside dist/switchery folder) and by inserting a piese of code inside your controller. This code can be also found inside button.js script.
+                 </p> 
+                 <xmp>       angular.element(document).ready(function (){ 
+                                var elem1 = document.querySelector('.js-switch');
+                                var switchery = new Switchery(elem1, { color: '#7c8bc7' })
+                            });
+                </xmp>
+                <p>
+                    This solution only excludes an original jquery solution but keeps all functions from 
+                    <a href="http://abpetkov.github.io/switchery/">Switchery</a> untouched.
+                </p>
+
+                <div class="panel-body">
+                    <input type="checkbox" class="js-switch" checked>
+
+                    <xmp>
+                        var elem0 = document.querySelector('.js-switch');
+                        var switchery = new Switchery(elem0, { color: '#7c8bc7' });
+                    </xmp>
+                </div>
+
+
+                <div class="panel-body">
+                    <input type="checkbox" class="js-switch1" checked>
+
+                    <xmp>
+                            var elem1 = document.querySelector('.js-switch1');
+                            var switchery = new Switchery(elem1, {  color : '#64bd63', secondaryColor:'white', jackColor: '#64bd63', size:'small' });
+                    </xmp>
+                </div>
+
+
+                <div class="panel-body">
+                    <input type="checkbox" class="js-switch2" checked>
+
+                    <xmp>
+                           var elem2 = document.querySelector('.js-switch2');
+                            var switchery = new Switchery(elem2, {  color : '#f8ac59', secondaryColor:'#f8ac59', jackColor: 'white', size:'large' });
+                    </xmp>
+                </div>
+            </div>
+    </div>
+
+
+  
+</body>
